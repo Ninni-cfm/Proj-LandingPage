@@ -1,118 +1,213 @@
+/******************************************************************************
+    Assets for this web page:
+
+    Font: Caveat+Brush
+    Colors: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff
+*/
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
+/*****************************************************************************
+    Remove margin and padding for all elements
+*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/*****************************************************************************
+    Enable smooth scrolling
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*****************************************************************************
+    Set default font-family, style and and size
+*/
 body {
     font-family: "Caveat Brush", cursive;
-    font-size: 18px;
-    text-transform: capitalize;
+    text-align: center;
+    font-size: 1vmin;
     font-variant: small-caps;
+
+    background: linear-gradient(to bottom, #63805b30, #63805bc0);
+    color: #113322;
 }
 
+/*****************************************************************************
+    Some default styles for elements
+*/
+section {
+    padding: 0 10%;
+}
 h1 {
-    color: #113322;
-    width: 45%;
-    padding-left: 20%;
-    padding-top: 12%;
-    text-shadow: 0px 0px 12px white, 5px 5px 12px black;
-    font-size: 7em;
+    text-shadow: 0px 0px 0.5vmin white, 0.25vmin 0.25vmin 1.2vmin black;
+    text-transform: capitalize;
+    font-size: 8em;
+    padding-bottom: 2%;
 }
-
+h3 {
+    padding-top: 1%;
+    font-size: 5em;
+    text-shadow: 0px 0px 0.5vmin white, 0.25vmin 0.25vmin 1.2vmin black;
+}
 h5 {
-    padding-top: 10%;
+    padding-top: 1%;
     font-size: 2em;
+    text-shadow: 0px 0px 1vmin white, 0.25vmin 0.25vmin 1vmin black;
 }
-
 a {
-    text-decoration: none;
     color: #113322;
+    text-decoration: none;
     font-size: 2em;
-    text-shadow: 0px 0px 12px white, 5px 5px 12px black;
+    text-shadow: 0px 0px 0.5vmin white, 0.25vmin 0.25vmin 1vmin black;
 }
 a:visited {
     color: #113322;
 }
-
 ul {
     list-style: none;
     display: inline-block;
 }
-
-#landing {
-    min-height: 100vh;
-    background: url(../img/mix-4.jpg) top/cover no-repeat;
+li {
+    text-shadow: 0px 0px 0.5vmin white, 0.25vmin 0.25vmin 1.2vmin black;
 }
 
+/*****************************************************************************
+    Navigation area
+*/
+nav {
+    position: fixed;
+    top: 2vmin;
+    right: 3vmin;
+    /* width: 50%; */
+}
 nav ul {
     display: block;
-    text-align: center;
-    width: 50%;
+    text-align: right;
+
     margin: 0 auto;
 }
-.nav-li {
+nav li {
+    /* display: inline-block; */
+    padding: 2% 4% 2% 0;
+}
+nav a {
+    font-size: 3vmin;
+}
+
+/*****************************************************************************
+    First section: What I'm doing...
+*/
+#landing-top {
+    padding-top: 5%;
+}
+#landing-top h3 {
+    padding-bottom: 10%;
+}
+#landing-top figure {
     display: inline-block;
-    padding: 2% 5%;
+    width: 40vmin;
+}
+#landing-top img {
+    display: inline-block;
+    width: 90%;
+    box-shadow: 0 0 1vmin black;
+    border-radius: 2vmin;
+}
+#landing-top figcaption {
+    font-size: 3em;
+    text-shadow: 0px 0px 0.5vmin white, 0.25vmin 0.25vmin 1.2vmin black;
 }
 
-.nav-li a {
-    color: #29413d;
-    font-size: 2em;
+/*****************************************************************************
+    Second section: wildlife
+*/
+#wildlife {
+    text-align: left;
+}
+#wildlife h1 {
+    padding-bottom: 1vh;
+}
+#wildlife h3 {
+    padding: 0 0 5vh;
+}
+#wildlife div {
+    padding-bottom: 40vh;
+    background: url("../img/wildlife-3.jpg") top center/cover no-repeat;
+    box-shadow: 0 0 1vmin black;
+    border-radius: 2vmin;
+}
+#wildlife img {
+    margin: 2vmin 0 0 2vmin;
+    width: 25%;
+    box-shadow: 0 0 1vmin black;
+    border-radius: 2vmin;
 }
 
-.img-blk-1 {
-    text-align: right;
+/*****************************************************************************
+    third section: landscapes
+*/
+#landscapes {
+    /* text-align: center; */
+    min-height: 90vh;
 }
-.img-blk-1 img {
-    display: inline;
-    position: absolute;
-    width: 20%;
-    border-radius: 1em;
+#landscapes h1 {
+    padding-top: 5vh;
+}
+#landscapes h3 {
+    padding: 0 0 5vh;
+}
+#landscapes article {
+    display: inline-block;
+    vertical-align: top;
+}
+#landscapes article img {
+    display: block;
+    width: 58vw;
+    box-shadow: 0 0 1vmin black;
+    border-radius: 2vmin;
+}
+#landscapes aside {
+    display: inline-block;
+}
+#landscapes aside img {
+    display: block;
+    width: 18.6vw;
+    margin: 0 1vw 1vh;
+    box-shadow: 0 0 1vmin black;
+    border-radius: 2vmin;
 }
 
-.img-blk-1 .img-1 {
-    top: 10%;
-    right: 22%;
-}
-.img-blk-1 .img-2 {
-    top: 25%;
-    right: 10%;
-}
-.img-blk-1 .img-3 {
-    top: 43%;
-    right: 5%;
+/*****************************************************************************
+    fourth section: about
+*/
+#about {
+    text-align: center;
+    min-height: 90vh;
 }
 
+/*****************************************************************************
+    The footer: contact, social media etc.
+*/
 footer {
-    padding-left: 20%;
+    text-align: center;
+    padding-bottom: 2vh;
 }
 footer ul {
-    text-align: left;
     width: 100%;
 }
-footer h5 {
-    color: #113322;
-    font-size: 2.5em;
-    text-shadow: 0px 0px 12px white, 5px 5px 12px black;
+footer img {
+    vertical-align: middle;
+    border-radius: 1vmin;
 }
-
 .social-li {
     display: inline-block;
-    color: #113322;
-    font-size: 2em;
+    font-size: 4em;
     padding-right: 2%;
     font-weight: 600;
-    text-shadow: 0px 0px 12px white, 5px 5px 12px black;
 }
-
 .social-li a {
-    color: #113322;
     font-size: 1em;
-    text-shadow: 0px 0px 12px white, 5px 5px 12px black;
-}
-
-.social-li a:visited {
-    color: #113322;
+    font-weight: 600;
 }
