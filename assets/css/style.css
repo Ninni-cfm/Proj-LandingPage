@@ -133,7 +133,7 @@ nav a {
     padding: 0 0 5vh;
 }
 #wildlife div {
-    padding-bottom: 40vh;
+    padding-bottom: 55vh;
     background: url("../img/wildlife-3.jpg") top center/cover no-repeat;
     box-shadow: 0 0 1vmin black;
     border-radius: 2vmin;
@@ -149,7 +149,7 @@ nav a {
     third section: landscapes
 */
 #landscapes {
-    /* text-align: center; */
+    text-align: left;
     min-height: 90vh;
 }
 #landscapes h1 {
@@ -200,11 +200,12 @@ footer ul {
 footer img {
     vertical-align: middle;
     border-radius: 1vmin;
+    width: 5vmin;
 }
 .social-li {
     display: inline-block;
     font-size: 4em;
-    padding-right: 2%;
+    padding-right: 2vw;
     font-weight: 600;
 }
 .social-li a {
